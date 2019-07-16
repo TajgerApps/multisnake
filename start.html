@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Witaj! :)</title>
+</head>
+<body>
+    Podaj swój nick: <input id="nick">
+    <button id="click">zaczynamy!</button>
+    <script type="text/javascript">
+        document.getElementById('click').addEventListener('click', () => {
+            if (document.getElementById('nick').value !== '') {
+                document.location.href = document.location.href.replace('start.html', '') + '#' + (document.getElementById('nick').value);
+            }
+        });
+        document.getElementById('nick').addEventListener('keypress', (evt) => {
+            if (evt.key === 'Enter') {
+                document.getElementById('click').click();
+            }
+        });
+    </script>
+</body>
+</html>

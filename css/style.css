@@ -1,0 +1,34 @@
+#screen {
+    border: 1px solid black;
+    float: left;
+}
+
+#chat, #send, #display {
+    float: left;
+    position: relative;
+    display: block;
+}
+
+#chat {
+    margin-left: 20px;
+    width: 640px;
+}
+
+#input {
+    width: 460px;
+}
+
+#send {
+    float: right;
+    width: 60px;
+    border: 1px solid black;
+}
+
+#display {
+    width: 634px;
+    height: 453px;
+}
+
+#nick {
+    width: 100px;
+}
